@@ -1,5 +1,5 @@
-resource "azurerm_network_function_collector_policy" "network_function_collector_policys" {
-  for_each = var.network_function_collector_policys
+resource "azurerm_network_function_collector_policy" "network_function_collector_policies" {
+  for_each = var.network_function_collector_policies
 
   location             = each.value.location
   name                 = each.value.name

@@ -1,6 +1,6 @@
-variable "network_function_collector_policys" {
+variable "network_function_collector_policies" {
   description = <<EOT
-Map of network_function_collector_policys, attributes below
+Map of network_function_collector_policies, attributes below
 Required:
     - location
     - name
