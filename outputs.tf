@@ -1,3 +1,7 @@
+output "network_function_collector_policies_id" {
+  description = "Map of id values across all network_function_collector_policies, keyed the same as var.network_function_collector_policies"
+  value       = { for k, v in azurerm_network_function_collector_policy.network_function_collector_policies : k => v.id }
+}
 output "network_function_collector_policies_ipfx_emission" {
   description = "Map of ipfx_emission values across all network_function_collector_policies, keyed the same as var.network_function_collector_policies"
   value       = { for k, v in azurerm_network_function_collector_policy.network_function_collector_policies : k => v.ipfx_emission }
